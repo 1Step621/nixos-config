@@ -23,6 +23,7 @@
       typst
       any-nix-shell
       cachix
+      nixfmt
     ])
     ++ [ inputs.nvf.packages."${pkgs.stdenv.hostPlatform.system}".default ];
 }

@@ -3,26 +3,21 @@
 
   imports = [
     ./programs
-    ./themes
   ];
 
   home = {
     packages = with pkgs; [
       gh
-      cava
-      tdf
       mold-unwrapped
       jq
-      gemini-cli
-      codex
       uv
       nodejs
       fd
-      unar
       evcxr
       cloudflared
       ffmpeg
       python3
+      probe-rs-tools
     ];
 
     sessionVariables = {

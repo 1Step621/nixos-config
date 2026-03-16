@@ -32,7 +32,7 @@
     syntaxHighlighting.enable = true;
 
     initContent = ''
-      eval "$(zoxide init zsh)"
+      eval "$(zoxide init zsh --cmd cd)"
 
       bindkey '^ ' forward-word
 

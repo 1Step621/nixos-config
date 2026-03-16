@@ -2,6 +2,10 @@
   programs.fuzzel = {
     enable = true;
     settings = {
+      main = {
+        font = "Inter:size=10";
+        line-height = 15;
+      };
       colors = {
         background = "282a36dd";
         text = "f8f8f2ff";

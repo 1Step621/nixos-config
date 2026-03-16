@@ -7,17 +7,17 @@
     };
     style = ''
       * {
-        font-family: "JetBrainsMono Nerd Font";
-        font-size: 12pt;
+        font-family: "Roboto Mono", "Noto Sans CJK JP", sans-serif;
+        font-size: 11pt;
         font-weight: bold;
-        border-radius: 8px;
         transition-property: background-color;
         transition-duration: 0.5s;
+        color: #abb2bf;
       }
       @keyframes blink_red {
         to {
-          background-color: rgb(242, 143, 173);
-          color: rgb(26, 24, 38);
+          background-color: #e06c75;
+          color: #282c34;
         }
       }
       .urgent {
@@ -31,13 +31,9 @@
         background-color: transparent;
       }
       window > box {
-        margin-left: 5px;
-        margin-right: 5px;
-        margin-top: 5px;
-        background-color: #1e1e2a;
+        background-color: #282c34;
         padding: 3px;
-        padding-left:8px;
-        border: 2px none #33ccff;
+        padding-left: 8px;
       }
       #workspaces {
         padding-left: 0px;
@@ -50,76 +46,73 @@
         padding-right: 6px;
       }
       #workspaces button.active {
-        background-color: rgb(181, 232, 224);
-        color: rgb(26, 24, 38);
+        background-color: #61afef;
+        color: #282c34;
       }
       #workspaces button.urgent {
         color: rgb(26, 24, 38);
       }
       #workspaces button:hover {
-        background-color: rgb(248, 189, 150);
-        color: rgb(26, 24, 38);
+        background-color: #e5c07b;
+        color: #282c34;
       }
       tooltip {
-        background: rgb(48, 45, 65);
+        background: #21252b;
       }
       tooltip label {
-        color: rgb(217, 224, 238);
+        color: #abb2bf;
       }
       #custom-launcher {
         font-size: 20px;
         padding-left: 8px;
         padding-right: 6px;
-        color: #7ebae4;
+        color: #61afef;
       }
-      #mode, #clock, #memory, #temperature,#cpu,#custom-media, #custom-wall, #temperature, #backlight, #pulseaudio, #network, #battery, #custom-powermenu, #custom-cava-internal {
+      #mode, #clock, #memory, #temperature,#cpu,#custom-media, #custom-wall, #temperature, #backlight, #pulseaudio, #network, #battery, #custom-powermenu {
         padding-left: 10px;
         padding-right: 10px;
       }
       #battery {
-        color: rgb(181, 181, 224);
+        color: #98c379;
       }
       #battery.warning {
-        color: orange;
+        color: #e5c07b;
       }
       #battery.critical {
-        color: red;
+        color: #e06c75;
       }
       #memory {
-        color: rgb(181, 232, 224);
+        color: #56b6c2;
       }
       #cpu {
-        color: rgb(245, 194, 231);
+        color: #c678dd;
       }
       #clock {
-        color: rgb(217, 224, 238);
+        color: #abb2bf;
       }
       #custom-wall {
-        color: #33ccff;
+        color: #61afef;
       }
       #custom-media {
-        color: #fffaf0;
-      }
-      #custom-sptlrx-ex {
-        color: #fffaf0;
+        color: #abb2bf;
       }
       #temperature {
-        color: rgb(150, 205, 251);
+        color: #e5c07b;
       }
       #backlight {
-        color: rgb(248, 189, 150);
+        color: #e5c07b;
       }
       #pulseaudio {
-        color: rgb(245, 224, 220);
+        color: #56b6c2;
       }
       #network {
-        color: #ABE9B3;
+        color: #98c379;
       }
       #network.disconnected {
-        color: rgb(255, 255, 255);
+        color: #e06c75;
       }
       #custom-powermenu {
-        color: rgb(242, 143, 173);
+        color: #e06c75;
         padding-right: 8px;
       }
       #tray {
@@ -127,19 +120,14 @@
         padding-left: 10px;
       }
       #mpd.paused {
-        color: #414868;
+        color: #5c6370;
         font-style: italic;
       }
       #mpd.stopped {
         background: transparent;
       }
       #mpd {
-        color: #c0caf5;
-      }
-      #cava {
-        padding-right: 10px;
-        padding-left: 10px;
-        color: #87cefa;
+        color: #61afef;
       }
     '';
     settings = [
@@ -149,8 +137,6 @@
           "custom/launcher"
           "temperature"
           "custom/media"
-          "cava"
-          "custom/sptlrx-ex"
         ];
         modules-center = [ "clock" ];
         modules-right = [
@@ -170,26 +156,6 @@
         };
         "temperature" = {
           "format" = " {temperatureC}°C";
-        };
-        "cava" = {
-          framerate = 30;
-          bars = 12;
-          method = "pipewire";
-          bar_delimiter = 0;
-          format-icons = [
-            "▁"
-            "▂"
-            "▃"
-            "▄"
-            "▅"
-            "▆"
-            "▇"
-            "█"
-          ];
-        };
-        "custom/sptlrx-ex" = {
-          "max-length" = 100;
-          "exec" = "sptlrx-ex --mode pipe";
         };
         "pulseaudio" = {
           "scroll-step" = 1;
@@ -241,8 +207,9 @@
           "format" = "󰍛 {usage}%";
         };
         "custom/media" = {
-          "max-length" = 100;
+          "max-length" = 30;
           "exec" = "playerctl metadata title";
+          "on-click" = "playerctl play-pause";
           "tooltip" = false;
           "interval" = 10;
         };

@@ -5,9 +5,9 @@
   ...
 }:
 let
-  username = "kani";
-  hashedPassword = "$6$xzVNYSD7yHJuO./x$5fCLN3.ENzMJDWkgegYazIgw/NkWYC2jMSiTDqma84wjEhbYRgeDPcHb.nc55WPD3qpACqGakvM4kXHZihgly0";
-  hostname = "amon";
+  username = "onestep";
+  hashedPassword = "$6$AjrxuSz3HiNIFajY$DWbExgNcni7jnMo489Jyi7nymyI.lxXCWD8DEOgrSEXHiIPOagTZYlJ7.0U/YLkM/yWz3Xv5u1PzirYmJvsYC0";
+  hostname = "vivobook-nixos";
 in
 {
   imports = [
@@ -96,14 +96,6 @@ in
   programs = {
     hyprland.enable = true;
     niri.enable = true;
-    steam = {
-      enable = true;
-      remotePlay.openFirewall = true;
-      localNetworkGameTransfers.openFirewall = true;
-      extraCompatPackages = [
-        pkgs.proton-ge-bin
-      ];
-    };
   };
 
   virtualisation.waydroid.enable = true;

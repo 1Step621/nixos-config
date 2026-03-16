@@ -26,11 +26,10 @@
     grim
     slurp
     gdlauncher-carbon
-    sptlrx-ex
     discord
-    earbuds
     blender
     wf-recorder
+    stm32cubemx
   ];
 
   services = {
