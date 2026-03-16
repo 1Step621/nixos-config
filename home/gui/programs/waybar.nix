@@ -34,6 +34,7 @@
         background-color: #282c34;
         padding: 3px;
         padding-left: 8px;
+        padding-right: 8px;
       }
       #workspaces {
         padding-left: 0px;
@@ -68,7 +69,7 @@
         padding-right: 6px;
         color: #61afef;
       }
-      #mode, #clock, #memory, #temperature,#cpu,#custom-media, #custom-wall, #temperature, #backlight, #pulseaudio, #network, #battery, #custom-powermenu {
+      #mode, #clock, #memory, #temperature, #cpu, #custom-media, #custom-wall, #temperature, #backlight, #pulseaudio, #network, #battery {
         padding-left: 10px;
         padding-right: 10px;
       }
@@ -113,11 +114,8 @@
       }
       #custom-powermenu {
         color: #e06c75;
-        padding-right: 8px;
-      }
-      #tray {
-        padding-right: 8px;
-        padding-left: 10px;
+        padding-left: 6px;
+        padding-right: 12px;
       }
       #mpd.paused {
         color: #5c6370;
@@ -147,7 +145,6 @@
           "cpu"
           "network"
           "custom/powermenu"
-          "tray"
         ];
         "custom/launcher" = {
           "format" = " ";
@@ -156,6 +153,7 @@
         };
         "temperature" = {
           "format" = " {temperatureC}°C";
+          "tooltip" = false;
         };
         "pulseaudio" = {
           "scroll-step" = 1;
@@ -187,13 +185,16 @@
             "󰁿"
             "󰂁"
           ];
+          "tooltip" = false;
         };
         "backlight" = {
           "format" = "󰖨 {percent}%";
+          "tooltip" = false;
         };
         "clock" = {
           "interval" = 1;
           "format" = "{:%m/%d %H:%M (%a)}";
+          "tooltip" = false;
         };
         "memory" = {
           "interval" = 1;
@@ -201,10 +202,12 @@
           "states" = {
             "warning" = 85;
           };
+          "tooltip" = false;
         };
         "cpu" = {
           "interval" = 1;
           "format" = "󰍛 {usage}%";
+          "tooltip" = false;
         };
         "custom/media" = {
           "max-length" = 30;
@@ -225,10 +228,6 @@
           "format" = "";
           "on-click" = "wlogout";
           "tooltip" = false;
-        };
-        "tray" = {
-          "icon-size" = 15;
-          "spacing" = 5;
         };
       }
     ];
