@@ -8,5 +8,6 @@
     ./nix.nix
     ./yazi.nix
     ./opencode.nix
+    ./gpg.nix
   ];
 }
