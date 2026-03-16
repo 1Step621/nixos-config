@@ -10,7 +10,6 @@
     nvf = {
       url = "github:yadokani389/nvf-config";
       inputs = {
-        nixpkgs.follows = "nixpkgs";
         flake-parts.follows = "flake-parts";
         git-hooks.follows = "git-hooks";
       };
