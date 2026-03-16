@@ -18,6 +18,7 @@
       ffmpeg
       python3
       probe-rs-tools
+      clang-tools
     ];
 
     sessionVariables = {
