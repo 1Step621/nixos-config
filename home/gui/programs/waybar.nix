@@ -193,7 +193,7 @@
         };
         "clock" = {
           "interval" = 1;
-          "format" = "{:%H:%M %p  %A %b %d}";
+          "format" = "{:%m/%d %H:%M (%a)}";
         };
         "memory" = {
           "interval" = 1;
