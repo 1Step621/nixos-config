@@ -22,8 +22,8 @@
   "Mod+Period".action.expel-window-from-column = { };
 
   "Mod+Left".action.focus-column-or-monitor-left = { };
-  "Mod+Down".action.focus-window-or-monitor-down = { };
-  "Mod+Up".action.focus-window-or-monitor-up = { };
+  "Mod+Down".action.focus-window-or-workspace-down = { };
+  "Mod+Up".action.focus-window-or-workspace-up = { };
   "Mod+Right".action.focus-column-or-monitor-right = { };
   "Mod+H".action.focus-column-or-monitor-left = { };
   "Mod+J".action.focus-window-or-workspace-down = { };
@@ -96,13 +96,20 @@
   "Mod+Shift+Minus".action.set-window-height = "-10%";
   "Mod+Shift+Equal".action.set-window-height = "+10%";
 
-  "Print".action.screenshot = { };
-  "Ctrl+Print".action.screenshot-screen = {
-    write-to-disk = false;
-  };
-  "Alt+Print".action.screenshot-window = {
-    write-to-disk = false;
-  };
+  "Print".action.spawn = [
+    "flameshot"
+    "gui"
+    "--clipboard"
+    "--path"
+    "/home/onestep/Pictures/Screenshots/"
+  ];
+  "Ctrl+Print".action.spawn = [
+    "flameshot"
+    "full"
+    "--clipboard"
+    "--path"
+    "/home/onestep/Pictures/Screenshots/"
+  ];
 
   "XF86AudioRaiseVolume" = {
     allow-when-locked = true;
