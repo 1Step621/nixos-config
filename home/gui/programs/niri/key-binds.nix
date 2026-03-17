@@ -33,7 +33,7 @@
   "Mod+Shift+Left".action.move-column-left-or-to-monitor-left = { };
   "Mod+Shift+Down".action.move-window-down-or-to-workspace-down = { };
   "Mod+Shift+Up".action.move-window-up-or-to-workspace-up = { };
-  "Mod+Shift+Right".action.move-column-to-monitor-right = { };
+  "Mod+Shift+Right".action.move-column-right-or-to-monitor-right = { };
   "Mod+Shift+H".action.move-column-left-or-to-monitor-left = { };
   "Mod+Shift+J".action.move-window-down-or-to-workspace-down = { };
   "Mod+Shift+K".action.move-window-up-or-to-workspace-up = { };
