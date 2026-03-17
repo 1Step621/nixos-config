@@ -69,7 +69,7 @@
         padding-right: 6px;
         color: #61afef;
       }
-      #mode, #clock, #memory, #temperature, #cpu, #custom-media, #custom-wall, #temperature, #backlight, #pulseaudio, #network, #battery {
+      #mode, #clock, #memory, #temperature, #cpu, #custom-media, #custom-wall, #temperature, #backlight, #pulseaudio, #network, #custom-wf-recorder, #battery {
         padding-left: 10px;
         padding-right: 10px;
       }
@@ -105,6 +105,9 @@
       }
       #pulseaudio {
         color: #56b6c2;
+      }
+      #custom-wf-recorder {
+        color: #e06c75;
       }
       #network {
         color: #98c379;
@@ -143,6 +146,7 @@
           "backlight"
           "memory"
           "cpu"
+          "custom/wf-recorder"
           "network"
           "custom/powermenu"
         ];
@@ -215,6 +219,12 @@
           "on-click" = "playerctl play-pause";
           "tooltip" = false;
           "interval" = 10;
+        };
+        "custom/wf-recorder" = {
+          "exec" = "test -e \"$XDG_RUNTIME_DIR/wf-recorder.pid\" && printf '●'";
+          "on-click" = "wf-recorder-toggle -f \"$HOME/Videos/screencaptures/$(date +%F-%H-%M-%S).mp4\"";
+          "tooltip" = false;
+          "interval" = 1;
         };
         "network" = {
           "format-disconnected" = "󰯡 ";

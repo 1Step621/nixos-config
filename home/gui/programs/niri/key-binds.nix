@@ -96,19 +96,11 @@
   "Mod+Shift+Minus".action.set-window-height = "-10%";
   "Mod+Shift+Equal".action.set-window-height = "+10%";
 
-  "Print".action.spawn = [
-    "flameshot"
-    "gui"
-    "--clipboard"
-    "--path"
-    "/home/onestep/Pictures/Screenshots/"
+  "Print".action.spawn-sh = [
+    "flameshot gui --clipboard --path $HOME/Pictures/screenshots/"
   ];
-  "Ctrl+Print".action.spawn = [
-    "flameshot"
-    "full"
-    "--clipboard"
-    "--path"
-    "/home/onestep/Pictures/Screenshots/"
+  "Ctrl+Print".action.spawn-sh = [
+    "wf-recorder-toggle -f \"$HOME/Videos/screencaptures/$(date +%F-%H-%M-%S).mp4\""
   ];
 
   "XF86AudioRaiseVolume" = {

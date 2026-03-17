@@ -31,6 +31,7 @@
       discord
       blender
       wf-recorder
+      wf-recorder-toggle
       stm32cubemx
     ]
     ++ [ inputs.stm32cubeide.packages.x86_64-linux.default ];
