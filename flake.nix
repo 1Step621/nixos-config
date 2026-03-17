@@ -54,6 +54,9 @@
         xwayland-satellite-unstable.follows = "";
       };
     };
+    stm32cubeide = {
+      url = "github:fdnt7/stm32cubeide.nix";
+    };
   };
 
   outputs =

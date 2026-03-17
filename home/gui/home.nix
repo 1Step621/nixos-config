@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
 
   imports = [
@@ -6,31 +6,34 @@
     ./themes
   ];
 
-  home.packages = with pkgs; [
-    wlr-randr
-    dunst
-    pavucontrol
-    xdg-utils
-    tokyonight-gtk-theme
-    playerctl
-    pamixer
-    brightnessctl
-    wl-clipboard
-    nautilus
-    gimp
-    wallpaper_random
-    kooha
-    dragon-drop
-    rquickshare
-    wayvnc
-    grim
-    slurp
-    gdlauncher-carbon
-    discord
-    blender
-    wf-recorder
-    stm32cubemx
-  ];
+  home.packages =
+    with pkgs;
+    [
+      wlr-randr
+      dunst
+      pavucontrol
+      xdg-utils
+      tokyonight-gtk-theme
+      playerctl
+      pamixer
+      brightnessctl
+      wl-clipboard
+      nautilus
+      gimp
+      wallpaper_random
+      kooha
+      dragon-drop
+      rquickshare
+      wayvnc
+      grim
+      slurp
+      gdlauncher-carbon
+      discord
+      blender
+      wf-recorder
+      stm32cubemx
+    ]
+    ++ [ inputs.stm32cubeide.packages.x86_64-linux.default ];
 
   services = {
     kdeconnect = {
