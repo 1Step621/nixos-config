@@ -2,14 +2,19 @@
 {
   programs.zsh = {
     enable = true;
-    oh-my-zsh = {
-      enable = true;
-      theme = "refined";
-      plugins = [
-        "git"
-        "ssh-agent"
-      ];
-    };
+
+    plugins = [
+      {
+        name = "powerlevel10k";
+        src = pkgs.zsh-powerlevel10k;
+        file = "share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+      }
+      {
+        name = "powerlevel10k-config";
+        src = ./p10k;
+        file = ".p10k.zsh";
+      }
+    ];
 
     zsh-abbr = {
       enable = true;
@@ -36,9 +41,6 @@
       eval "$(zoxide init zsh --cmd cd)"
 
       bindkey '^ ' forward-word
-
-      # for refined theme
-      any-nix-shell zsh --info-right | sed 's/precmd () {/& \nsetopt localoptions nopromptsubst\nvcs_info\nprint -P "\\n$(repo_information) %F{yellow}$(cmd_exec_time)%f"\nunset cmd_timestamp/' | source /dev/stdin
 
       source ${pkgs.zsh-fzf-tab}/share/fzf-tab/fzf-tab.plugin.zsh
 

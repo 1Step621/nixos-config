@@ -107,7 +107,6 @@
             settings = {
               hooks = {
                 ripsecrets.enable = true;
-                typos.enable = true;
                 treefmt.enable = true;
               };
             };
