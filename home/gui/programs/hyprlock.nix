@@ -10,7 +10,7 @@
 
       background = [
         {
-          path = "~/wallpapers/blender.png";
+          path = "~/wallpapers/nixos.png";
         }
       ];
 
@@ -19,9 +19,12 @@
           size = "300, 50";
 
           outline_thickness = 1;
+          outer_color = "rgba(0, 0, 0, 0.0)";
+          inner_color = "rgba(0, 0, 0, 0.0)";
+          font_color = "rgb(255, 255, 255)";
 
           fade_on_empty = false;
-          placeholder_text = "Password...";
+          placeholder_text = "Type Password";
 
           dots_spacing = 0.2;
           dots_center = true;
@@ -31,9 +34,11 @@
       label = [
         {
           text = "$TIME";
+
+          font_family = "Inter Bold";
           font_size = 50;
 
-          position = "0, 150";
+          position = "0, 60";
 
           valign = "center";
           halign = "center";
