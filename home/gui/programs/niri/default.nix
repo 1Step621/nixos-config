@@ -15,7 +15,10 @@
   programs.niri.settings = {
     binds = import ./key-binds.nix;
     input = {
-      focus-follows-mouse.enable = true;
+      focus-follows-mouse = {
+        max-scroll-amount = "0%";
+        enable = true;
+      };
       warp-mouse-to-focus.enable = true;
       touchpad.dwt = true;
     };
