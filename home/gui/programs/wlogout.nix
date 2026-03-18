@@ -18,7 +18,7 @@ in
       }
       {
         label = "logout";
-        action = "niri msg version >/dev/null 2>&1 && niri msg action quit -s || hyprctl dispatch exit";
+        action = "niri msg action quit -s";
         keybind = "e";
       }
       {

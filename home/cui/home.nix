@@ -14,7 +14,6 @@
       nodejs
       fd
       evcxr
-      cloudflared
       ffmpeg
       python3
       probe-rs-tools
