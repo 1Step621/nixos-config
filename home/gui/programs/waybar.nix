@@ -197,7 +197,7 @@
         };
         "clock" = {
           "interval" = 1;
-          "format" = "{:%m/%d %H:%M (%a)}";
+          "format" = "{:%m/%d (%a) %H:%M}";
           "tooltip" = false;
         };
         "memory" = {
