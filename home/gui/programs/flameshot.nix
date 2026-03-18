@@ -7,6 +7,7 @@
     };
     settings.General = {
       useGrimAdapter = true;
+      showStartupLaunchMessage = false;
       showDesktopNotification = false;
       showHelp = false;
     };
