@@ -236,7 +236,7 @@
         };
         "custom/powermenu" = {
           "format" = "";
-          "on-click" = "wlogout";
+          "on-click" = "wlogout --buttons-per-row 2";
           "tooltip" = false;
         };
       }

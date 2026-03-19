@@ -1,11 +1,3 @@
-{ pkgs, lib, ... }:
-let
-  bgImageSection = name: ''
-    #${name} {
-      background-image: image(url("${pkgs.wlogout}/share/wlogout/icons/${name}.png"));
-    }
-  '';
-in
 {
   programs.wlogout = {
     enable = true;
@@ -22,14 +14,14 @@ in
         keybind = "e";
       }
       {
-        "label" = "reboot";
-        "action" = "reboot";
-        "keybind" = "r";
+        label = "reboot";
+        action = "reboot";
+        keybind = "r";
       }
       {
-        "label" = "shutdown";
-        "action" = "poweroff";
-        "keybind" = "s";
+        label = "shutdown";
+        action = "poweroff";
+        keybind = "s";
       }
     ];
 
@@ -39,7 +31,7 @@ in
       }
 
       window {
-        background-color: rgba(200, 200, 220, .2);
+        background-color: rgba(0, 0, 0, .5);
       }
 
       button {
@@ -50,19 +42,29 @@ in
         background-repeat: no-repeat;
         background-position: center;
         background-size: 25%;
+        border-width: 0px;
+        outline-style: none;
       }
 
       button:focus, button:active, button:hover {
         background-color: rgba(200, 200, 220, 0.2);
-        outline-style: none;
       }
 
-      ${lib.concatMapStringsSep "\n" bgImageSection [
-        "lock"
-        "logout"
-        "shutdown"
-        "reboot"
-      ]}
+      #lock {
+        background-image: image(url("${./assets}/lock.png"));
+      }
+
+      #logout {
+        background-image: image(url("${./assets}/logout.png"));
+      }
+
+      #reboot {
+        background-image: image(url("${./assets}/reboot.png"));
+      }
+
+      #shutdown {
+        background-image: image(url("${./assets}/shutdown.png"));
+      }
     '';
   };
 }
