@@ -4,6 +4,14 @@
 
     layout = [
       {
+        label = "none-0";
+        action = "";
+      }
+      {
+        label = "none-1";
+        action = "";
+      }
+      {
         label = "lock";
         action = "hyprlock";
         keybind = "l";
@@ -22,6 +30,14 @@
         label = "shutdown";
         action = "poweroff";
         keybind = "s";
+      }
+      {
+        label = "none-2";
+        action = "";
+      }
+      {
+        label = "none-3";
+        action = "";
       }
     ];
 
@@ -64,6 +80,10 @@
 
       #shutdown {
         background-image: image(url("${./assets}/shutdown.png"));
+      }
+
+      #none-0, #none-1, #none-2, #none-3 {
+        opacity: 0;
       }
     '';
   };

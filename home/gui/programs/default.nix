@@ -4,7 +4,7 @@
     ./fuzzel.nix
     ./waybar.nix
     ./hyprlock.nix
-    ./wlogout/default.nix
+    ./wlogout
     ./kitty.nix
     ./zen-browser.nix
     ./flameshot.nix
