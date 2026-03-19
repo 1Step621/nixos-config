@@ -18,13 +18,19 @@
         {
           size = "300, 50";
 
-          outline_thickness = 1;
+          outline_thickness = 0;
           outer_color = "rgba(0, 0, 0, 0.0)";
           inner_color = "rgba(0, 0, 0, 0.0)";
           font_color = "rgb(255, 255, 255)";
+          check_color = "rgba(0, 0, 0, 0.0)";
+          fail_color = "rgba(0, 0, 0, 0.0)";
+          capslock_color = "rgba(0, 0, 0, 0.0)";
+          numlock_color = "rgba(0, 0, 0, 0.0)";
+          bothlock_color = "rgba(0, 0, 0, 0.0)";
 
           fade_on_empty = false;
           placeholder_text = "Type Password";
+          fail_text = "Authentication Failed";
 
           dots_spacing = 0.2;
           dots_center = true;
