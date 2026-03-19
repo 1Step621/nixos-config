@@ -3,7 +3,7 @@
 
   "Mod+Return".action.spawn = "kitty";
   "Mod+D".action.spawn = "fuzzel";
-  "Mod+T".action.spawn = "wlogout";
+  "Mod+T".action.spawn = "hyprlock";
   "Mod+B".action.spawn = [
     "pkill"
     "-SIGUSR1"
@@ -90,11 +90,11 @@
   "Mod+Ctrl+8".action.move-column-to-workspace = 8;
   "Mod+Ctrl+9".action.move-column-to-workspace = 9;
 
-  "Mod+Minus".action.set-column-width = "-10%";
-  "Mod+Equal".action.set-column-width = "+10%";
+  "Mod+Alt+Left".action.set-column-width = "-10%";
+  "Mod+Alt+Right".action.set-column-width = "+10%";
 
-  "Mod+Shift+Minus".action.set-window-height = "-10%";
-  "Mod+Shift+Equal".action.set-window-height = "+10%";
+  "Mod+Alt+Up".action.set-window-height = "-10%";
+  "Mod+Alt+Down".action.set-window-height = "+10%";
 
   "Print".action.spawn-sh = [
     "flameshot gui --clipboard --path $HOME/Pictures/screenshots/"

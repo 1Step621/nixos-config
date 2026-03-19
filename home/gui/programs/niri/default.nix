@@ -20,6 +20,7 @@
         max-scroll-amount = "0%";
         enable = true;
       };
+      keyboard.xkb.options = "caps:escape";
       warp-mouse-to-focus.enable = true;
       touchpad.dwt = true;
     };
