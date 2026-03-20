@@ -4,11 +4,19 @@
 
     layout = [
       {
-        label = "none-0";
+        label = "empty-0";
         action = "";
       }
       {
-        label = "none-1";
+        label = "empty-1";
+        action = "";
+      }
+      {
+        label = "empty-2";
+        action = "";
+      }
+      {
+        label = "empty-3";
         action = "";
       }
       {
@@ -17,9 +25,25 @@
         keybind = "l";
       }
       {
+        label = "empty-4";
+        action = "";
+      }
+      {
+        label = "empty-5";
+        action = "";
+      }
+      {
         label = "logout";
         action = "niri msg action quit -s";
         keybind = "e";
+      }
+      {
+        label = "empty-6";
+        action = "";
+      }
+      {
+        label = "empty-7";
+        action = "";
       }
       {
         label = "reboot";
@@ -27,16 +51,32 @@
         keybind = "r";
       }
       {
+        label = "empty-8";
+        action = "";
+      }
+      {
+        label = "empty-9";
+        action = "";
+      }
+      {
         label = "shutdown";
         action = "poweroff";
         keybind = "s";
       }
       {
-        label = "none-2";
+        label = "empty-10";
         action = "";
       }
       {
-        label = "none-3";
+        label = "empty-11";
+        action = "";
+      }
+      {
+        label = "empty-12";
+        action = "";
+      }
+      {
+        label = "empty-13";
         action = "";
       }
     ];
@@ -47,42 +87,53 @@
       }
 
       window {
-        background-color: rgba(0, 0, 0, .5);
+        background-color: rgba(0, 0, 0, 0.5);
       }
 
       button {
-        background: rgba(200, 200, 220, .1);
+        background: rgba(40, 44, 52, 0.7);
         border-radius: 8px;
-        box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .1), 0 0 rgba(0, 0, 0, .5);
         margin: 1rem;
         background-repeat: no-repeat;
         background-position: center;
         background-size: 25%;
+        box-shadow: 0 0 0 0 transparent;
         border-width: 0px;
-        outline-style: none;
-      }
-
-      button:focus, button:active, button:hover {
-        background-color: rgba(200, 200, 220, .2);
       }
 
       #lock {
-        background-image: image(url("${./assets}/lock.png"));
+        background-image: image(url("${./assets}/lock.svg"));
+      }
+
+      #lock:hover, #lock:focus {
+        background-color: rgba(0, 47, 95, 0.7);
       }
 
       #logout {
-        background-image: image(url("${./assets}/logout.png"));
+        background-image: image(url("${./assets}/logout.svg"));
+      }
+
+      #logout:hover, #logout:focus {
+        background-color: rgba(20, 56, 0, 0.7);
       }
 
       #reboot {
-        background-image: image(url("${./assets}/reboot.png"));
+        background-image: image(url("${./assets}/reboot.svg"));
+      }
+
+      #reboot:hover, #reboot:focus {
+        background-color: rgba(65, 40, 0, 0.7);
       }
 
       #shutdown {
-        background-image: image(url("${./assets}/shutdown.png"));
+        background-image: image(url("${./assets}/shutdown.svg"));
       }
 
-      #none-0, #none-1, #none-2, #none-3 {
+      #shutdown:hover, #shutdown:focus {
+        background-color: rgba(97, 0, 18, 0.7);
+      }
+
+      #empty-0, #empty-1, #empty-2, #empty-3, #empty-4, #empty-5, #empty-6, #empty-7, #empty-8, #empty-9, #empty-10, #empty-11, #empty-12, #empty-13 {
         opacity: 0;
       }
     '';
