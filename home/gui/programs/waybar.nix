@@ -106,8 +106,20 @@
       #pulseaudio {
         color: #56b6c2;
       }
+      @keyframes blink_red_char {
+        from {
+          color: transparent;
+        }
+        to {
+          color: #e06c75;
+        }
+      }
       #custom-wf-recorder {
-        color: #e06c75;
+        animation-name: blink_red_char;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
       }
       #network {
         color: #98c379;
