@@ -8,13 +8,11 @@
         noto-fonts-color-emoji
         noto-fonts-monochrome-emoji
         twemoji-color-font
-        fira-code-symbols
         roboto-mono
         inter
       ])
       ++ (with pkgs.nerd-fonts; [
-        fira-code
-        jetbrains-mono
+        roboto-mono
         noto
       ]);
     fontconfig = {
@@ -29,10 +27,8 @@
           "Noto Emoji"
         ];
         monospace = [
-          "FiraCode Nerd Font"
-          "JetBrainsMono Nerd Font Mono"
+          "RobotoMono Nerd Font Mono"
           "Noto Emoji"
-          "Roboto Mono"
         ];
         emoji = [ "Noto Emoji" ];
       };
