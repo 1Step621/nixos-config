@@ -91,7 +91,7 @@
       }
 
       button {
-        background: rgba(40, 44, 52, 0.7);
+        background: rgba(40, 44, 52, 0.8);
         border-radius: 8px;
         margin: 1rem;
         background-repeat: no-repeat;
