@@ -106,7 +106,7 @@
       }
 
       #lock:hover, #lock:focus {
-        background-color: rgba(0, 47, 95, 0.7);
+        background-color: rgba(0, 47, 95, 0.8);
       }
 
       #logout {
@@ -114,7 +114,7 @@
       }
 
       #logout:hover, #logout:focus {
-        background-color: rgba(20, 56, 0, 0.7);
+        background-color: rgba(20, 56, 0, 0.8);
       }
 
       #reboot {
@@ -122,7 +122,7 @@
       }
 
       #reboot:hover, #reboot:focus {
-        background-color: rgba(65, 40, 0, 0.7);
+        background-color: rgba(65, 40, 0, 0.8);
       }
 
       #shutdown {
@@ -130,7 +130,7 @@
       }
 
       #shutdown:hover, #shutdown:focus {
-        background-color: rgba(97, 0, 18, 0.7);
+        background-color: rgba(97, 0, 18, 0.8);
       }
 
       #empty-0, #empty-1, #empty-2, #empty-3, #empty-4, #empty-5, #empty-6, #empty-7, #empty-8, #empty-9, #empty-10, #empty-11, #empty-12, #empty-13 {
