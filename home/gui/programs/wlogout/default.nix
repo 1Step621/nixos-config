@@ -51,7 +51,7 @@
       }
 
       button {
-        background: rgba(200, 200, 220, .05);
+        background: rgba(200, 200, 220, .1);
         border-radius: 8px;
         box-shadow: inset 0 0 0 1px rgba(255, 255, 255, .1), 0 0 rgba(0, 0, 0, .5);
         margin: 1rem;
@@ -63,7 +63,7 @@
       }
 
       button:focus, button:active, button:hover {
-        background-color: rgba(200, 200, 220, 0.2);
+        background-color: rgba(200, 200, 220, .2);
       }
 
       #lock {
