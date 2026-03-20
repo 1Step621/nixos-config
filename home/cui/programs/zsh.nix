@@ -25,6 +25,7 @@
         lla = "eza -la";
         rm = "rm -rf";
         cp = "cp -r";
+        c = "clear";
         "$" = "";
         lg = "lazygit";
         rusti = "evcxr";
