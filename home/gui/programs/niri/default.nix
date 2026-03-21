@@ -24,6 +24,7 @@
       warp-mouse-to-focus.enable = true;
       touchpad.dwt = true;
     };
+    gestures.hot-corners.enable = false;
     prefer-no-csd = true;
     spawn-at-startup = [
       { command = [ "waybar" ]; }

@@ -9,6 +9,7 @@
     "-SIGUSR1"
     "waybar"
   ];
+  "Mod+O".action.toggle-overview = { };
 
   "Mod+C".action.close-window = { };
   "Mod+W".action.toggle-column-tabbed-display = { };
