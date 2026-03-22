@@ -211,7 +211,8 @@
         };
         "custom/powermenu" = {
           "format" = "";
-          "on-click" = "wlogout --buttons-per-row 6";
+          "on-click" =
+            "wlogout --buttons-per-row 6 --margin-top 440 --margin-bottom 440 --margin-left 360 --margin-right 360";
           "tooltip" = false;
         };
       }
