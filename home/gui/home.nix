@@ -50,7 +50,7 @@
     };
 
     "org/gnome/shell/extensions/user-theme" = {
-      name = "Tokyonight-Dark-B-LB";
+      name = "Tokyonight-Dark";
     };
   };
 
@@ -73,6 +73,19 @@
       xdg-desktop-portal-gtk
       xdg-desktop-portal-gnome
     ];
+  };
+
+  xdg.desktopEntries = {
+    stm32cubeide = {
+      name = "STM32CubeIDE";
+      exec = "${inputs.stm32cubeide.packages.x86_64-linux.default}/bin/stm32cubeide";
+      terminal = false;
+      type = "Application";
+      categories = [
+        "Development"
+        "IDE"
+      ];
+    };
   };
 
   systemd.user.services.wallpaper-changer = {
