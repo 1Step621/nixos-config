@@ -29,6 +29,7 @@
         ];
         monospace = [
           "RobotoMono Nerd Font Mono"
+          "Noto Sans CJK JP"
           "Noto Emoji"
         ];
         emoji = [ "Noto Emoji" ];
