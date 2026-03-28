@@ -51,6 +51,7 @@ username:
       EDITOR = "nvim";
       BROWSER = "zen-beta";
       TERMINAL = "kitty";
+      GSK_RENDERER = "gl";
     };
   };
 }
