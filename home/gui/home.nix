@@ -19,7 +19,7 @@
       brightnessctl
       wl-clipboard
       nautilus
-      gimp
+      krita
       wallpaper_random
       dragon-drop
       rquickshare
@@ -32,6 +32,7 @@
       wf-recorder
       wf-recorder-toggle
       stm32cubemx
+      inkscape
     ]
     ++ [ inputs.stm32cubeide.packages.x86_64-linux.default ];
 
