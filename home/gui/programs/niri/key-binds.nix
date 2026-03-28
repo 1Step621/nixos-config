@@ -9,6 +9,10 @@
     "-SIGUSR1"
     "waybar"
   ];
+  "Mod+P".action.spawn = [
+    "hyprpicker"
+    "--autocopy"
+  ];
   "Mod+O".action.toggle-overview = { };
 
   "Mod+C".action.close-window = { };
@@ -120,6 +124,22 @@
       "set-volume"
       "@DEFAULT_AUDIO_SINK@"
       "0.05-"
+    ];
+  };
+  "XF86MonBrightnessUp" = {
+    allow-when-locked = true;
+    action.spawn = [
+      "brightnessctl"
+      "set"
+      "5%+"
+    ];
+  };
+  "XF86MonBrightnessDown" = {
+    allow-when-locked = true;
+    action.spawn = [
+      "brightnessctl"
+      "set"
+      "5%-"
     ];
   };
   "XF86AudioMute" = {
