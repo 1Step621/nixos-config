@@ -68,7 +68,6 @@ username: hashedPassword: hostname:
     baobab # disk usage analyzer
     cheese # photo booth
     epiphany # web browser
-    gedit # text editor
     orca # screen reader
     simple-scan # document scanner
     yelp # help viewer
@@ -81,7 +80,6 @@ username: hashedPassword: hostname:
     gnome-characters
     gnome-clocks
     gnome-contacts
-    gnome-font-viewer
     gnome-logs
     gnome-maps
     gnome-music
