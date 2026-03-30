@@ -36,6 +36,22 @@
         ];
         emoji = [ "Noto Emoji" ];
       };
+      localConf = ''
+        <?xml version="1.0"?>
+        <!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+        <fontconfig>
+
+          <match target="pattern">
+            <test name="family" qual="any" compare="contains">
+              <string>Noto Sans</string>
+            </test>
+            <edit name="family" mode="prepend" binding="strong">
+              <string>Inter</string>
+            </edit>
+          </match>
+
+        </fontconfig>
+      '';
     };
   };
 }
