@@ -8,9 +8,11 @@
         noto-fonts-cjk-serif
         noto-fonts-color-emoji
         noto-fonts-monochrome-emoji
+        noto-fonts
         twemoji-color-font
         roboto-mono
         inter
+        lmmath
       ])
       ++ (with pkgs.nerd-fonts; [
         roboto-mono
