@@ -12,6 +12,7 @@ let
         config.allowUnfree = true;
         overlays = [
           inputs.nur-yadokani.overlays.nur
+          inputs.nur-onestep.overlays.nur
         ];
       };
     in

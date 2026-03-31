@@ -208,6 +208,7 @@
           "format-wifi" = "󰖩 ";
           "interval" = 10;
           "tooltip" = false;
+          "on-click" = "fuzzel-network";
         };
         "custom/powermenu" = {
           "format" = "";

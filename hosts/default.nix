@@ -17,6 +17,7 @@ let
         };
         overlays = [
           inputs.nur-yadokani.overlays.nur
+          inputs.nur-onestep.overlays.nur
         ];
       };
       inherit modules;

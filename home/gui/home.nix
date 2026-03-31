@@ -33,6 +33,7 @@
       wf-recorder-toggle
       stm32cubemx
       inkscape
+      fuzzel-network
     ]
     ++ [ inputs.stm32cubeide.packages.x86_64-linux.default ];
 
