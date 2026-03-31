@@ -15,7 +15,7 @@
         width = "400";
         height = "(0,400)";
         scale = 0;
-        gap_size = 0;
+        gap_size = 8;
         progress_bar = true;
         transparency = 0;
         text_icon_padding = 0;
@@ -27,15 +27,15 @@
         show_age_threshold = 60;
         ellipsize = "middle";
         ignore_newline = "no";
-        stack_duplicates = true;
+        stack_duplicates = false;
         sticky_history = "yes";
         history_length = 20;
         always_run_script = true;
         corner_radius = 10;
         follow = "mouse";
-        font = "Source Sans Pro 10";
-        format = "<b>%s</b>\\n%b"; # format = "<span foreground='#f3f4f5'><b>%s %p</b></span>\n%b"
-        frame_color = "#232323";
+        font = "Noto Sans CJK JP 10";
+        format = "<b>%s</b>\\n%b";
+        frame_color = "#3e4451";
         frame_width = 1;
         offset = "(15,15)";
         horizontal_padding = 10;
@@ -54,22 +54,23 @@
         word_wrap = "yes";
         browser = "/usr/bin/env zen-beta -new-tab";
       };
-
       fullscreen_delay_everything = {
         fullscreen = "delay";
       };
-
       urgency_critical = {
-        background = "#d64e4e";
-        foreground = "#f0e0e0";
+        background = "#282c34";
+        foreground = "#e06c75";
+        frame_color = "#e06c75";
       };
       urgency_low = {
-        background = "#232323";
-        foreground = "#2596be";
+        background = "#282c34";
+        foreground = "#98c379";
+        frame_color = "#3e4451";
       };
       urgency_normal = {
-        background = "#1e1e2a";
-        foreground = "#2596be";
+        background = "#282c34";
+        foreground = "#abb2bf";
+        frame_color = "#3e4451";
       };
     };
   };
