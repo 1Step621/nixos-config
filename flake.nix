@@ -7,16 +7,6 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nvf = {
-      url = "github:yadokani389/nvf-config";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        flake-parts.follows = "flake-parts";
-        git-hooks.follows = "git-hooks";
-        nur-yadokani.follows = "nur-yadokani";
-        treefmt-nix.follows = "treefmt-nix";
-      };
-    };
     nixos-wsl = {
       url = "github:nix-community/NixOS-WSL";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -32,7 +22,12 @@
     };
     nur-onestep = {
       url = "github:1Step621/nur-packages";
-      inputs.nixpkgs.follows = "nixpkgs";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        flake-parts.follows = "flake-parts";
+        treefmt-nix.follows = "treefmt-nix";
+        git-hooks.follows = "git-hooks";
+      };
     };
     nix-index-database = {
       url = "github:nix-community/nix-index-database";
@@ -65,7 +60,7 @@
     };
     stm32cubeide = {
       url = "github:fdnt7/stm32cubeide.nix";
-      inputs.nixpkgs.follows = "nixpkgs";
+      # inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
