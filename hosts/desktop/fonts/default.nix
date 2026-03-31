@@ -50,6 +50,15 @@
             </edit>
           </match>
 
+          <match>
+            <test name="family" compare="eq">
+              <string>Consolas</string>
+            </test>
+            <edit name="family" mode="assign" binding="strong">
+              <string>Roboto Mono</string>
+            </edit>
+          </match>
+
         </fontconfig>
       '';
     };
