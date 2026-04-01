@@ -26,7 +26,6 @@
         rm = "rm -rf";
         cp = "cp -r";
         c = "clear";
-        "$" = "";
         lg = "lazygit";
         rusti = "evcxr";
         drg = "dragon-drop";
@@ -54,6 +53,8 @@
 
       zle -N zoxide_zi_insert
       bindkey '^G' zoxide_zi_insert
+
+      setopt interactivecomments
     '';
   };
 }

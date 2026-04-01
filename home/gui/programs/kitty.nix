@@ -55,8 +55,8 @@
       mark3_background #E5C07B
 
       # 16 colors (One Dark)
-      color0  #282C34
-      color8  #5C6370
+      color0  #3F4451
+      color8  #4F5666
 
       color1  #E06C75
       color9  #E06C75

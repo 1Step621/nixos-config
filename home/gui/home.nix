@@ -34,6 +34,7 @@
       stm32cubemx
       inkscape
       fuzzel-network
+      hyprpicker
     ]
     ++ [ inputs.stm32cubeide.packages.x86_64-linux.default ];
 

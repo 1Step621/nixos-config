@@ -18,7 +18,6 @@
       python3
       probe-rs-tools
       clang-tools
-      hyprpicker
     ];
 
     sessionVariables = {
