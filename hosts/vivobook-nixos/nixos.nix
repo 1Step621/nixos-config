@@ -101,5 +101,16 @@ in
 
   powerManagement.cpuFreqGovernor = "ondemand";
 
+  fileSystems."/mnt/windows" = {
+    device = "/dev/disk/by-uuid/DAC833ABC83384B3";
+    fsType = "ntfs3";
+    options = [
+      "rw"
+      "uid=1000"
+      "gid=100"
+      "umask=022"
+    ];
+  };
+
   system.stateVersion = "25.05";
 }
