@@ -33,6 +33,7 @@
       };
     };
 
+    autocd = true;
     autosuggestion.enable = true;
     enableCompletion = true;
     syntaxHighlighting.enable = true;
