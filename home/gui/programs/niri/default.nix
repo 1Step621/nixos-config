@@ -8,7 +8,7 @@
 
   home.packages = with pkgs; [
     xwayland-satellite
-    swww
+    awww
   ];
 
   programs.niri.package = pkgs.niri;
@@ -28,7 +28,7 @@
     prefer-no-csd = true;
     spawn-at-startup = [
       { command = [ "waybar" ]; }
-      { command = [ "swww-daemon" ]; }
+      { command = [ "awww-daemon" ]; }
     ];
     hotkey-overlay.skip-at-startup = true;
     cursor.theme = "Bibata-Modern-Classic";
