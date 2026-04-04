@@ -45,16 +45,24 @@ in
         useOSProber = true;
       };
     };
+    kernel.sysctl = {
+      "net.ipv4.ip_forward" = 1;
+    };
     binfmt.emulatedSystems = [ "aarch64-linux" ];
   };
 
   networking = {
+    nat = {
+      enable = true;
+      internalInterfaces = [ "wlp2s0" ];
+      externalInterface = "enp100s0f3u3";
+    };
     firewall = {
       allowedTCPPortRanges = [
         {
           from = 1714;
           to = 1764;
-        } # KDE Connect
+        }
         {
           from = 1420;
           to = 1423;
@@ -69,9 +77,53 @@ in
           from = 1714;
           to = 1764;
         }
-        # KDE Connect
       ];
+      interfaces.wlp2s0 = {
+        allowedTCPPorts = [ 53 ];
+        allowedUDPPorts = [
+          53
+          67
+          68
+        ];
+      };
     };
+    networkmanager.dispatcherScripts = [
+      {
+        type = "basic";
+        source = pkgs.writeShellScript "hotspot-switch" ''
+          export PATH="${pkgs.networkmanager}/bin:${pkgs.gawk}/bin:$PATH"
+
+          IFACE="$1"
+          STATE="$2"
+
+          ETH_IF="enp100s0f3u3"
+          WIFI_IF="wlp2s0"
+
+          HOTSPOT_NAME="lanstep"
+
+          log() {
+              logger "[dispatcher] $1"
+          }
+
+          if [ "$IFACE" = "$ETH_IF" ]; then
+              case "$STATE" in
+                  up)
+                      log "Ethernet connected -> enable hotspot"
+                      nmcli -w 0 connection up "$HOTSPOT_NAME"
+                      ;;
+
+                  down|device-removed)
+                      log "Ethernet disconnected -> disable hotspot"
+                      nmcli -w 0 connection down "$HOTSPOT_NAME" 2>/dev/null
+                      ;;
+
+                  *)
+                      ;;
+              esac
+          fi
+        '';
+      }
+    ];
   };
 
   console.keyMap = "jp106";
