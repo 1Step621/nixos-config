@@ -5,6 +5,7 @@
     packages =
       (with pkgs; [
         noto-fonts-cjk-sans
+        noto-fonts-cjk-sans-static
         noto-fonts-cjk-serif
         noto-fonts-color-emoji
         noto-fonts-monochrome-emoji
