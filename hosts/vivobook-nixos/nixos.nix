@@ -91,7 +91,7 @@ in
       {
         type = "basic";
         source = pkgs.writeShellScript "hotspot-switch" ''
-          export PATH="${pkgs.networkmanager}/bin:${pkgs.gawk}/bin:$PATH"
+          export PATH="${pkgs.networkmanager}/bin"
 
           IFACE="$1"
           STATE="$2"
