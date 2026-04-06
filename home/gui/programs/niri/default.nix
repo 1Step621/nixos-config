@@ -29,6 +29,14 @@
     spawn-at-startup = [
       { command = [ "waybar" ]; }
       { command = [ "awww-daemon" ]; }
+      {
+        command = [
+          "wl-paste"
+          "--watch"
+          "cliphist"
+          "store"
+        ];
+      }
     ];
     hotkey-overlay.skip-at-startup = true;
     cursor.theme = "Bibata-Modern-Classic";
