@@ -30,6 +30,8 @@
         rusti = "evcxr";
         drg = "dragon-drop";
         open = "nautilus";
+        "ちぇん" = "cd";
+        "チェン" = "cd";
       };
     };
 
