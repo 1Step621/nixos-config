@@ -17,6 +17,7 @@
 
   "Mod+C".action.close-window = { };
   "Mod+W".action.toggle-window-floating = { };
+  "Mod+S".action.toggle-column-tabbed-display = { };
   "Mod+V".action.spawn = "cliphist-fuzzel-img";
   "Mod+R".action.switch-preset-column-width = { };
   "Mod+E".action.switch-preset-window-height = { };

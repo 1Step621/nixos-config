@@ -42,6 +42,16 @@
     cursor.theme = "Bibata-Modern-Classic";
     cursor.hide-after-inactive-ms = 10000;
     layout = {
+      tab-indicator = {
+        width = 8;
+        gap = 8;
+        corner-radius = 4;
+        length.total-proportion = 0.5;
+        place-within-column = true;
+        hide-when-single-tab = true;
+        active.color = "#4e7682";
+        inactive.color = "#333333";
+      };
       default-column-width.proportion = 0.5;
       focus-ring = {
         active.gradient = {
@@ -62,6 +72,7 @@
           bottom-left = 8.0;
           bottom-right = 8.0;
         };
+        default-column-display = "tabbed";
       }
     ];
   };
