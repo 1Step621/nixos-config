@@ -35,6 +35,7 @@
       inkscape
       fuzzel-network
       hyprpicker
+      libreoffice
     ]
     ++ [ inputs.stm32cubeide.packages.x86_64-linux.default ];
 
