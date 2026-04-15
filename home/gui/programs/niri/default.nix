@@ -37,6 +37,7 @@
           "store"
         ];
       }
+      { command = [ "arrpc" ]; }
     ];
     hotkey-overlay.skip-at-startup = true;
     cursor.theme = "Bibata-Modern-Classic";

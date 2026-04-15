@@ -19,6 +19,7 @@
       probe-rs-tools
       clang-tools
       cliphist
+      arrpc
     ];
 
     sessionVariables = {
