@@ -32,7 +32,7 @@ username:
     ];
 
     sessionVariables = {
-      EDITOR = "nvim";
+      EDITOR = "hx";
       BROWSER = "zen-beta";
       TERMINAL = "kitty";
       GSK_RENDERER = "gl";

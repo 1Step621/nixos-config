@@ -27,7 +27,7 @@ let
             inherit username;
             homeDirectory = "/home/${username}";
             stateVersion = "26.05";
-            sessionVariables.EDITOR = "nvim";
+            sessionVariables.EDITOR = "hx";
           };
         }
       ];
