@@ -23,11 +23,8 @@
       wallpaper_random
       dragon-drop
       rquickshare
-      wayvnc
       grim
       slurp
-      gdlauncher-carbon
-      discord
       blender
       wf-recorder
       wf-recorder-toggle
