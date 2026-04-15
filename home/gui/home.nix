@@ -37,7 +37,7 @@
       hyprpicker
       libreoffice
       helix
-      celluloid
+      tauon
     ]
     ++ [ inputs.stm32cubeide.packages.x86_64-linux.default ];
 

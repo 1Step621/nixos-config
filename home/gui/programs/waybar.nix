@@ -190,7 +190,7 @@
         };
         "custom/media" = {
           "max-length" = 30;
-          "exec" = "playerctl -p io.github.celluloid_player.Celluloid,firefox metadata title";
+          "exec" = "playerctl -p tauon,firefox metadata title";
           "on-click" = "playerctl play-pause";
           "tooltip" = false;
           "interval" = 10;

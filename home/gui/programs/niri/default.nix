@@ -74,6 +74,14 @@
         };
         default-column-display = "tabbed";
       }
+      {
+        matches = [
+          {
+            app-id = "tauonmb";
+          }
+        ];
+        open-floating = true;
+      }
     ];
   };
 }
