@@ -9,5 +9,6 @@
     ./yazi.nix
     ./opencode.nix
     ./gpg.nix
+    ./helix.nix
   ];
 }

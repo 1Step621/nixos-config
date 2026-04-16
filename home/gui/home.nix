@@ -33,7 +33,6 @@
       fuzzel-network
       hyprpicker
       libreoffice
-      helix
       tauon
     ]
     ++ [ inputs.stm32cubeide.packages.x86_64-linux.default ];
