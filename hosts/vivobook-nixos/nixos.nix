@@ -52,6 +52,9 @@ in
   };
 
   networking = {
+    timeServers = options.networking.timeServers.default ++ [
+      "172.20.0.19"
+    ];
     nat = {
       enable = true;
       internalInterfaces = [ "wlp2s0" ];
