@@ -7,7 +7,7 @@
       waylandFrontend = true;
       addons = with pkgs; [
         fcitx5-mozc
-        karukan-im
+        (karukan-im.override { vulkanSupport = true; })
       ];
     };
   };
