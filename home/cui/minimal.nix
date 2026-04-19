@@ -10,7 +10,6 @@
   home.packages = with pkgs; [
     curl
     bat
-    git
     lazygit
     unzip
     wget
@@ -21,5 +20,6 @@
     any-nix-shell
     cachix
     nixfmt
+    mergiraf
   ];
 }

@@ -10,5 +10,6 @@
     ./opencode.nix
     ./gpg.nix
     ./helix.nix
+    ./git.nix
   ];
 }
