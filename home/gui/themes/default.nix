@@ -12,14 +12,20 @@
     theme = {
       name = "Colloid-Dark-Nord";
       package = pkgs.colloid-gtk-theme.override {
-        tweaks = [ "nord" ];
+        tweaks = [
+          "nord"
+          "normal"
+        ];
       };
     };
 
     gtk4.theme = {
       name = "Colloid-Dark-Nord";
       package = pkgs.colloid-gtk-theme.override {
-        tweaks = [ "nord" ];
+        tweaks = [
+          "nord"
+          "normal"
+        ];
       };
     };
 
