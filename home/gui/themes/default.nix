@@ -3,18 +3,24 @@
   gtk = {
     enable = true;
     iconTheme = {
-      name = "Yaru-magenta-dark";
-      package = pkgs.yaru-theme;
+      name = "Colloid-Nord-Dark";
+      package = pkgs.colloid-icon-theme.override {
+        schemeVariants = [ "nord" ];
+      };
     };
 
     theme = {
-      name = "Tokyonight-Dark";
-      package = pkgs.tokyonight-gtk-theme;
+      name = "Colloid-Dark-Nord";
+      package = pkgs.colloid-gtk-theme.override {
+        tweaks = [ "nord" ];
+      };
     };
 
     gtk4.theme = {
-      name = "Tokyonight-Dark";
-      package = pkgs.tokyonight-gtk-theme;
+      name = "Colloid-Dark-Nord";
+      package = pkgs.colloid-gtk-theme.override {
+        tweaks = [ "nord" ];
+      };
     };
 
     cursorTheme = {

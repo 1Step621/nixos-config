@@ -13,7 +13,6 @@
       dunst
       pavucontrol
       xdg-utils
-      tokyonight-gtk-theme
       playerctl
       pamixer
       brightnessctl
