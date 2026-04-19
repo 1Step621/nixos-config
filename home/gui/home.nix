@@ -50,7 +50,7 @@
     };
 
     "org/gnome/shell/extensions/user-theme" = {
-      name = "Tokyonight-Dark";
+      name = "Colloid-Dark-Nord";
     };
   };
 
