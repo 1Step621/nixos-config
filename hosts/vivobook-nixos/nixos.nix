@@ -136,6 +136,7 @@ in
     tailscale.enable = true;
     xserver.videoDrivers = [ "nvidia" ];
     desktopManager.gnome.enable = true;
+    thermald.enable = true;
   };
 
   hardware = {
