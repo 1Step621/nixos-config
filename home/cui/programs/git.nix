@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   programs.git = {
     enable = true;
@@ -14,8 +15,8 @@
       rebase.autostash = true;
       credential = {
         helper = "cache";
-        "https://github.com".helper = "!/etc/profiles/per-user/onestep/bin/gh auth git-credential";
-        "https://gist.github.com".helper = "!/etc/profiles/per-user/onestep/bin/gh auth git-credential";
+        "https://github.com".helper = "!${pkgs.gh}/bin/gh auth git-credential";
+        "https://gist.github.com".helper = "!${pkgs.gh}/bin/gh auth git-credential";
       };
       gpg.program = "gpg";
       commit.gpgsign = true;
