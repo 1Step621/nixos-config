@@ -137,6 +137,9 @@ in
     xserver.videoDrivers = [ "nvidia" ];
     desktopManager.gnome.enable = true;
     thermald.enable = true;
+    udev.packages = [
+      pkgs.platformio-core.udev
+    ];
   };
 
   hardware = {
