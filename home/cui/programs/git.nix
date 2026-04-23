@@ -31,6 +31,9 @@
       ];
       alias.undo = "reset --soft HEAD^";
     };
+    ignores = [
+      ".direnv/"
+    ];
     attributes = [
       "* merge=mergiraf"
     ];
