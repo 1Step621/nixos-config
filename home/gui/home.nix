@@ -81,6 +81,11 @@
       "application/xml" = "code.desktop";
       "text/x-cmake" = "code.desktop";
       "application/toml" = "code.desktop";
+      "audio/mpeg" = "org.gnome.Decibels";
+      "audio/vnd.wave" = "org.gnome.Decibels";
+      "audio/ogg" = "org.gnome.Decibels";
+      "audio/flac" = "org.gnome.Decibels";
+      "audio/aac" = "org.gnome.Decibels";
     };
   };
 
