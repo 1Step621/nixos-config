@@ -24,6 +24,7 @@
   boot.initrd.kernelModules = [ ];
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
+  boot.loader.systemd-boot.configurationLimit = 10;
 
   fileSystems."/" = {
     device = "/dev/disk/by-uuid/dc98f1b4-42b7-4318-a3ec-63140e08320e";
