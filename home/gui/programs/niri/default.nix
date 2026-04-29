@@ -64,6 +64,7 @@
         };
       };
     };
+    overview.backdrop-color = "#21252b";
     window-rules = [
       {
         clip-to-geometry = true;
