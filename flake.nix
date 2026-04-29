@@ -44,7 +44,7 @@
       inputs.home-manager.follows = "home-manager";
     };
     niri-flake = {
-      url = "github:sodiboo/niri-flake";
+      url = "github:sodiboo/niri-flake/a2eb6a3475ecdb110d448537efb8b2ae43786bc6";
       inputs = {
         niri-stable.follows = "";
         niri-unstable.follows = "";

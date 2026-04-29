@@ -18,7 +18,7 @@
         background-color: transparent;
       }
       window > box {
-        background-color: #282c34;
+        background-color: rgba(40, 44, 52, 0.75);
         padding: 3px;
         padding-left: 8px;
         padding-right: 8px;
@@ -34,7 +34,7 @@
         padding-right: 6px;
       }
       tooltip {
-        background: #21252b;
+        background: rgba(40, 44, 52, 0.75);
       }
       tooltip label {
         color: #abb2bf;
@@ -108,6 +108,7 @@
     '';
     settings = [
       {
+        layer = "top";
         position = "top";
         modules-left = [
           "custom/launcher"

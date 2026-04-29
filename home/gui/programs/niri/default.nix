@@ -85,5 +85,18 @@
         open-floating = true;
       }
     ];
+    layer-rules = [
+      {
+        matches = [
+          {
+            namespace = "waybar";
+          }
+        ];
+        background-effect = {
+          blur = true;
+          xray = false;
+        };
+      }
+    ];
   };
 }
