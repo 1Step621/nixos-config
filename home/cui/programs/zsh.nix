@@ -29,7 +29,7 @@
         lg = "lazygit";
         rusti = "evcxr";
         drg = "dragon-drop";
-        open = "nautilus";
+        open = "xdg-open";
         "ちぇん" = "cd";
         "チェン" = "cd";
       };
