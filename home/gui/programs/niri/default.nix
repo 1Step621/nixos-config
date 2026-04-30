@@ -44,21 +44,21 @@
     cursor.hide-after-inactive-ms = 10000;
     layout = {
       tab-indicator = {
-        width = 8;
+        width = 4;
         gap = 8;
-        corner-radius = 4;
+        corner-radius = 2;
         length.total-proportion = 0.5;
         place-within-column = true;
         hide-when-single-tab = true;
-        active.color = "#4e7682";
-        inactive.color = "#333333";
+        active.color = "#61afef";
+        inactive.color = "#282c34";
       };
       default-column-width.proportion = 0.5;
       focus-ring = {
         active.gradient = {
           angle = 45;
-          from = "#4e7682";
-          to = "#1b5262";
+          from = "#61afef75";
+          to = "#3688cb75";
           in' = "oklab";
           relative-to = "workspace-view";
         };
