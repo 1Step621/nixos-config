@@ -14,9 +14,9 @@
         background = "282c34dd";
         text = "abb2bfff";
         match = "61afefff";
-        selection-match = "61afefff";
-        selection = "3e4451dd";
-        selection-text = "abb2bfff";
+        selection-match = "282c34ff";
+        selection = "61afefdd";
+        selection-text = "282c34ff";
         border = "333842ff";
       };
       border = {
