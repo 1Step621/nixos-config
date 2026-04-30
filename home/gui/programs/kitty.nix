@@ -10,12 +10,12 @@
       # Remove close window confirm
       confirm_os_window_close 0
 
+      window_padding_width 5 10
+
       font_family Roboto Mono
       font_size 12.0
 
       map ctrl+shift+; change_font_size all +2.0
-
-      scrollback_pager nvim -c "setlocal autowriteall" -c "silent write! /tmp/kitty_scrollback_buffer | te cat /tmp/kitty_scrollback_buffer - "
 
       background_opacity 0.75
       background_blur 1
