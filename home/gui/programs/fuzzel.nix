@@ -17,7 +17,7 @@
         selection-match = "61afefff";
         selection = "3e4451dd";
         selection-text = "abb2bfff";
-        border = "61afefff";
+        border = "333842ff";
       };
       border = {
         selection-radius = 8;

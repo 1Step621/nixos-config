@@ -97,6 +97,33 @@
           xray = false;
         };
       }
+      {
+        matches = [
+          {
+            namespace = "launcher";
+          }
+        ];
+        geometry-corner-radius = {
+          top-left = 8.0;
+          top-right = 8.0;
+          bottom-left = 8.0;
+          bottom-right = 8.0;
+        };
+        shadow = {
+          enable = true;
+          color = "#21252b3c";
+          offset = {
+            x = 0;
+            y = 15;
+          };
+          softness = 35;
+          spread = 10;
+        };
+        background-effect = {
+          blur = true;
+          xray = false;
+        };
+      }
     ];
   };
 }
