@@ -103,7 +103,8 @@
   "Mod+Alt+Down".action.set-window-height = "+10%";
 
   "Print".action.spawn-sh = [
-    "flameshot gui --clipboard --path $HOME/Pictures/screenshots/"
+    # "flameshot gui --clipboard --path $HOME/Pictures/screenshots/"
+    "niri msg action screenshot"
   ];
   "Ctrl+Print".action.spawn-sh = [
     "wf-recorder-toggle -f \"$HOME/Videos/screencaptures/$(date +%F-%H-%M-%S).mp4\""
