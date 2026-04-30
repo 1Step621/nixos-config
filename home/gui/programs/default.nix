@@ -3,7 +3,7 @@
     ./dunst.nix
     ./fuzzel.nix
     ./waybar.nix
-    ./hyprlock.nix
+    ./hyprlock
     ./wlogout
     ./kitty.nix
     ./zen-browser.nix
