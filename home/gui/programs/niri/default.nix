@@ -27,16 +27,6 @@
     gestures.hot-corners.enable = false;
     prefer-no-csd = true;
     spawn-at-startup = [
-      { command = [ "waybar" ]; }
-      { command = [ "awww-daemon" ]; }
-      {
-        command = [
-          "wl-paste"
-          "--watch"
-          "cliphist"
-          "store"
-        ];
-      }
       { command = [ "arrpc" ]; }
     ];
     hotkey-overlay.skip-at-startup = true;
@@ -89,11 +79,10 @@
       {
         matches = [
           {
-            namespace = "waybar";
+            namespace = "dms";
           }
         ];
         background-effect = {
-          blur = true;
           xray = false;
         };
       }
@@ -121,7 +110,6 @@
         };
         background-effect = {
           blur = true;
-          xray = false;
         };
       }
     ];

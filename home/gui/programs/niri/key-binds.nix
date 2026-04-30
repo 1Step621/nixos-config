@@ -4,11 +4,6 @@
   "Mod+Return".action.spawn = "kitty";
   "Mod+D".action.spawn = "fuzzel";
   "Mod+T".action.spawn = "hyprlock";
-  "Mod+B".action.spawn = [
-    "pkill"
-    "-SIGUSR1"
-    "waybar"
-  ];
   "Mod+P".action.spawn = [
     "hyprpicker"
     "--autocopy"
@@ -18,7 +13,12 @@
   "Mod+C".action.close-window = { };
   "Mod+W".action.toggle-window-floating = { };
   "Mod+S".action.toggle-column-tabbed-display = { };
-  "Mod+V".action.spawn = "cliphist-fuzzel-img";
+  "Mod+V".action.spawn = [
+    "dms"
+    "ipc"
+    "clipboard"
+    "open"
+  ];
   "Mod+R".action.switch-preset-column-width = { };
   "Mod+E".action.switch-preset-window-height = { };
   "Mod+Shift+E".action.reset-window-height = { };

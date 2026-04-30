@@ -16,9 +16,7 @@
       evcxr
       ffmpeg
       python3
-      probe-rs-tools
       clang-tools
-      cliphist
       arrpc
     ];
 

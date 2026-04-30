@@ -20,6 +20,7 @@
         border = "333842ff";
       };
       border = {
+        radius = 8;
         selection-radius = 8;
       };
       key-bindings = {
