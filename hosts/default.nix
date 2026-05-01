@@ -24,9 +24,9 @@ let
     };
 in
 {
-  vivobook-nixos = mkNixosSystem {
+  zygodactyl = mkNixosSystem {
     system = "x86_64-linux";
-    modules = [ ./vivobook-nixos/nixos.nix ];
+    modules = [ ./zygodactyl/nixos.nix ];
     cudaSupport = true;
   };
 }
