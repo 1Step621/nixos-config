@@ -30,6 +30,8 @@
         rusti = "evcxr";
         drg = "dragon-drop";
         open = "xdg-open";
+        code = "zeditor";
+        zed = "zeditor";
         "ちぇん" = "cd";
         "チェン" = "cd";
       };
