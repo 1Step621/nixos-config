@@ -110,6 +110,7 @@
         };
         background-effect = {
           blur = true;
+          xray = false;
         };
       }
     ];

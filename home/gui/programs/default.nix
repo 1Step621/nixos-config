@@ -1,8 +1,6 @@
 {
   imports = [
-    ./fuzzel.nix
     ./hyprlock
-    ./wlogout
     ./kitty.nix
     ./zen-browser.nix
     ./flameshot.nix
