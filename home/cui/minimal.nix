@@ -1,5 +1,4 @@
 {
-  inputs,
   pkgs,
   ...
 }:
@@ -19,7 +18,8 @@
     typst
     any-nix-shell
     cachix
-    nixfmt
+    nixd
+    nil
     mergiraf
   ];
 }

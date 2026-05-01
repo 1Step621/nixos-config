@@ -8,6 +8,6 @@
     ./i18n.nix
     ./niri
     ./dms.nix
-    ./vscode.nix
+    ./zed-editor.nix
   ];
 }
