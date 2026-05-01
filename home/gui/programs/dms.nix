@@ -39,7 +39,7 @@
       firstDayOfWeek = -1;
       showWeekNumber = false;
       use24HourClock = true;
-      showSeconds = true;
+      showSeconds = false;
       padHours12Hour = false;
       useFahrenheit = false;
       windSpeedUnit = "kmh";
@@ -477,9 +477,8 @@
           showOnLastDisplay = true;
           leftWidgets = [
             {
-              id = "cpuTemp";
+              id = "cpuUsage";
               enabled = true;
-              minimumWidth = true;
             }
             {
               id = "workspaceSwitcher";
