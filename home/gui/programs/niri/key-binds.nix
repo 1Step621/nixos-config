@@ -2,12 +2,7 @@
   "Mod+Shift+Slash".action.show-hotkey-overlay = { };
 
   "Mod+Return".action.spawn = "kitty";
-  "Mod+D".action.spawn = [
-    "dms"
-    "ipc"
-    "launcher"
-    "open"
-  ];
+  "Mod+D".action.spawn = "fuzzel";
   "Mod+T".action.spawn = "hyprlock";
   "Mod+P".action.spawn = [
     "hyprpicker"
