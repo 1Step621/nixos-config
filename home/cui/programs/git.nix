@@ -3,10 +3,6 @@
   programs.git = {
     enable = true;
     settings = {
-      user = {
-        name = "1Step621";
-        email = "onestep621@gmail.com";
-      };
       init.defaultBranch = "main";
       pull = {
         rebase = true;

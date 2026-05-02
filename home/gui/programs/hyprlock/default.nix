@@ -10,7 +10,7 @@
 
       background = [
         {
-          path = "${./assets/nixos.png}";
+          path = "${./nixos.png}";
         }
       ];
 

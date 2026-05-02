@@ -3,7 +3,6 @@
   ...
 }:
 {
-
   imports = [ ./programs/minimal.nix ];
 
   home.packages = with pkgs; [

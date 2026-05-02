@@ -14,7 +14,7 @@ in
   imports = [
     ./hardware-configuration.nix
     (import ../nixos.nix username hashedPassword hostname)
-    ../desktop
+    ../desktop.nix
 
     inputs.home-manager.nixosModules.home-manager
     {
@@ -151,10 +151,6 @@ in
       nvidiaSettings = true;
       package = config.boot.kernelPackages.nvidiaPackages.production;
     };
-  };
-
-  programs = {
-    niri.enable = true;
   };
 
   virtualisation.waydroid.enable = true;

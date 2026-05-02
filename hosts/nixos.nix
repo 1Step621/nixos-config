@@ -41,16 +41,20 @@ username: hashedPassword: hostname:
     };
   };
 
+  zramSwap = {
+    enable = true;
+    algorithm = "zstd";
+    memoryPercent = 50;
+  };
+
   nix.settings = {
-    auto-optimise-store = true;
-    keep-outputs = true;
-    experimental-features = [
-      "nix-command"
-      "flakes"
-    ];
     trusted-users = [
       "root"
       "${username}"
+    ];
+    experimental-features = [
+      "nix-command"
+      "flakes"
     ];
   };
 

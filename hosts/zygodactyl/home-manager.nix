@@ -5,9 +5,8 @@ username:
 }:
 {
   imports = [
-    ../../home/gui/home.nix
-    ../../home/cui/home.nix
-    ../../home/cui/minimal.nix
+    ../../home/gui
+    ../../home/cui/full.nix
   ];
 
   programs.niri.settings = {
@@ -16,6 +15,11 @@ username:
       "Mod+U".action.focus-monitor-previous = { };
       "Mod+I".action.focus-monitor-next = { };
     };
+  };
+
+  programs.git.settings.user = {
+    name = "1Step621";
+    email = "onestep621@gmail.com";
   };
 
   programs.home-manager.enable = true;
@@ -35,6 +39,7 @@ username:
       BROWSER = "zen-beta";
       TERMINAL = "kitty";
       GSK_RENDERER = "gl";
+      RUST_SRC_PATH = "${pkgs.rust.packages.stable.rustPlatform.rustLibSrc}";
     };
   };
 }
