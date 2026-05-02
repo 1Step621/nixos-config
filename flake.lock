@@ -232,22 +232,6 @@
         "type": "github"
       }
     },
-    "nixpkgs_2": {
-      "locked": {
-        "lastModified": 1767116409,
-        "narHash": "sha256-5vKw92l1GyTnjoLzEagJy5V5mDFck72LiQWZSOnSicw=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "cad22e7d996aea55ecab064e84834289143e44a0",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nixos",
-        "ref": "nixos-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
     "nur-onestep": {
       "inputs": {
         "flake-parts": [
@@ -347,14 +331,16 @@
     },
     "stm32cubeide": {
       "inputs": {
-        "nixpkgs": "nixpkgs_2"
+        "nixpkgs": [
+          "nixpkgs"
+        ]
       },
       "locked": {
-        "lastModified": 1777730859,
-        "narHash": "sha256-PtJ9A9kPLWSLfYZDsBDYXrUm3sEJSMuCvKlL6AMOJ0c=",
+        "lastModified": 1777731346,
+        "narHash": "sha256-hePmMHCi/98XOmZbJ3D0toRSIH0bXY1+0oU1bPsqt7I=",
         "owner": "1Step621",
         "repo": "stm32cubeide.nix",
-        "rev": "de15a8e14abe23579342cb0555ef2ca5072e2518",
+        "rev": "60a4ac46598122072ad7dcb5d020725ef3587e5d",
         "type": "github"
       },
       "original": {

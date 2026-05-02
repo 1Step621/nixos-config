@@ -64,7 +64,7 @@
     };
     stm32cubeide = {
       url = "github:1Step621/stm32cubeide.nix";
-      # inputs.nixpkgs.follows = "nixpkgs";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
