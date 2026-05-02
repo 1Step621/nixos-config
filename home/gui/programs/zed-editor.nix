@@ -76,9 +76,15 @@
         dark = "Base16 OneDark";
       };
       load_direnv = "direct";
-      lsp.clangd.binary.arguments = [
-        "--header-insertion=never"
-      ];
+      lsp = {
+        clangd.binary.arguments = [
+          "--header-insertion=never"
+        ];
+        tinymist.settings = {
+          exportPdf = "onSave";
+          outputPath = "$root/$name";
+        };
+      };
     };
   };
 }
