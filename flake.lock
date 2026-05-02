@@ -350,11 +350,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1777543323,
-        "narHash": "sha256-w57fUGhxNmGf/jvPG4VsNCzVj/AW99hYCXoEn8/kumE=",
+        "lastModified": 1777730859,
+        "narHash": "sha256-PtJ9A9kPLWSLfYZDsBDYXrUm3sEJSMuCvKlL6AMOJ0c=",
         "owner": "1Step621",
         "repo": "stm32cubeide.nix",
-        "rev": "23eecf894a1feb3b51f8bd053761d8ad08c1812e",
+        "rev": "de15a8e14abe23579342cb0555ef2ca5072e2518",
         "type": "github"
       },
       "original": {
