@@ -3,6 +3,7 @@
 
   "Mod+Return".action.spawn = "kitty";
   "Mod+D".action.spawn = "fuzzel";
+  "Mod+E".action.spawn = "zeditor";
   "Mod+T".action.spawn = "hyprlock";
   "Mod+P".action.spawn = [
     "hyprpicker"
@@ -12,7 +13,6 @@
 
   "Mod+C".action.close-window = { };
   "Mod+W".action.toggle-window-floating = { };
-  "Mod+S".action.toggle-column-tabbed-display = { };
   "Mod+V".action.spawn = [
     "dms"
     "ipc"
@@ -20,8 +20,6 @@
     "open"
   ];
   "Mod+R".action.switch-preset-column-width = { };
-  "Mod+E".action.switch-preset-window-height = { };
-  "Mod+Shift+E".action.reset-window-height = { };
   "Mod+F".action.maximize-column = { };
   "Mod+G".action.fullscreen-window = { };
   "Mod+Comma".action.consume-window-into-column = { };
