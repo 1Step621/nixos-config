@@ -43,6 +43,7 @@
     syntaxHighlighting.enable = true;
 
     initContent = ''
+      export _ZO_EXCLUDE_DIRS="$HOME:/nix/store/*:$HOME/.*"
       eval "$(zoxide init zsh --cmd cd)"
 
       bindkey '^ ' forward-word
