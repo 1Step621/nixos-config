@@ -75,7 +75,7 @@
         light = "One Light";
         dark = "Base16 OneDark";
       };
-      load_direnv = "direct";
+      load_direnv = "shell_hook";
       lsp = {
         clangd.binary.arguments = [
           "--header-insertion=never"
@@ -83,6 +83,16 @@
         tinymist.settings = {
           exportPdf = "onSave";
           outputPath = "$root/$name";
+        };
+      };
+      languages = {
+        Rust = {
+          tab_size = 4;
+          hard_tabs = false;
+        };
+        "C++" = {
+          tab_size = 4;
+          hard_tabs = false;
         };
       };
     };
