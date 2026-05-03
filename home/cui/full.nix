@@ -16,6 +16,13 @@
     ffmpeg
     python3
     clang-tools
-    arrpc
+    (arrpc.overrideAttrs {
+      src = pkgs.fetchFromGitHub {
+        owner = "1Step621";
+        repo = "arrpc";
+        rev = "main";
+        sha256 = "sha256-jzK/tRNZpNiWvRf+lSjOGmlzbuMCu2JYUz18ge6NPb4=";
+      };
+    })
   ];
 }
