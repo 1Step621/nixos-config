@@ -22,9 +22,7 @@
       outline_panel.button = false;
       collaboration_panel.button = false;
       debugger.button = false;
-      edit_predictions.provider = "copilot";
       agent = {
-        button = false;
         default_model = {
           provider = "copilot_chat";
           model = "gpt-5.2-codex";
@@ -32,8 +30,21 @@
           effort = "high";
         };
       };
+      semantic_tokens = "combined";
+      diagnostics.inline.enabled = true;
       git.inline_blame.enabled = false;
       icon_theme = "Catppuccin Frappé";
+      gutter = {
+        runnables = false;
+        breakpoints = false;
+        folds = false;
+      };
+      close_on_file_delete = true;
+      auto_signature_help = true;
+      focus_follows_mouse = {
+        enabled = true;
+        debounce_ms = 0;
+      };
       ui_font_family = "Inter";
       session.trust_all_worktrees = true;
       cli_default_open_behavior = "new_window";
