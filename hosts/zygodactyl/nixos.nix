@@ -153,8 +153,6 @@ in
     };
   };
 
-  virtualisation.waydroid.enable = true;
-
   powerManagement.cpuFreqGovernor = "ondemand";
 
   fileSystems."/mnt/windows" = {
