@@ -30,14 +30,6 @@
     ]
     ++ [ inputs.stm32cubeide.packages.x86_64-linux.default ];
 
-  services = {
-    kdeconnect = {
-      enable = true;
-      package = pkgs.kdePackages.kdeconnect-kde;
-      indicator = true;
-    };
-  };
-
   dconf.settings = {
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
