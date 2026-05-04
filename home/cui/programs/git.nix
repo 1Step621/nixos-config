@@ -26,6 +26,12 @@
         "github:"
       ];
       alias.undo = "reset --soft HEAD^";
+      core.pager = "delta";
+      interactive.diffFilter = "delta --color-only";
+      delta = {
+        navigate = true;
+        dark = true;
+      };
     };
     ignores = [
       ".direnv/"

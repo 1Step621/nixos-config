@@ -20,5 +20,6 @@
     nixd
     nil
     mergiraf
+    delta
   ];
 }
