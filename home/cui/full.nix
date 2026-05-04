@@ -20,8 +20,8 @@
       src = pkgs.fetchFromGitHub {
         owner = "1Step621";
         repo = "arrpc";
-        rev = "main";
-        sha256 = "sha256-jzK/tRNZpNiWvRf+lSjOGmlzbuMCu2JYUz18ge6NPb4=";
+        rev = "af8dabef740c5d2e1d31f66498aebdad61086db0";
+        sha256 = "sha256-Luu/lmqbtYiw92bby1aJozL5bjUWkxrn9pt1XOO8uyQ=";
       };
     })
   ];
